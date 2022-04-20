@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+.flex-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.card{
+    max-width: 995px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item-left{
+    width: 50%;
+    height: 56vh;
+    background-color: hsl(244, 38%, 16%);
+    border: 1px solid transparent;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 50px 49px 50px 56px ;
+}
+
+.cont{
+    margin-right: 2px;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-right: 36px;
+}
+
+span:nth-child(1){
+    color: hsl(277, 64%, 61%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    line-height: 1.5rem;
+}
+
+.flex-item-left-footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-1{
+    width: 34%;
+    height: 7vh;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding-left: 1px;
+    margin-bottom: 3px;
+}
+
+.p-1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.6875rem;
+    border: none;
+    color: hsla(0, 0%, 100%, 0.6);
+
+}
+.footer-2{
+    width: 33%;
+    height: 7vh;
+}
+
+.footer-3{
+    width: 25%;
+    height: 7vh;
+}
+
+.flex-item-right{
+    width: 50%;
+    height: 56vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid transparent;
+    background-image: url("images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 500px 410px;
+    background-color: hsla(277, 64%, 61%, 1);
+    background-blend-mode: multiply;
+}
+
+/* For Screens of width 590px */
+@media only screen and (max-width: 590px) { 
+    .card{
+        max-width: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        border-bottom-right-radius: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .flex-item-right{
+        width: 100%;
+        height: 29vh;
+        border: 1px solid transparent ;
+        background-image: url("images/image-header-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 400px 232px;
+        background-color: hsla(277, 64%, 61%, 1);
+        background-blend-mode: multiply;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .flex-item-left{
+        width: 100%;
+        height:67vh;
+        background-color: hsl(244, 38%, 16%);
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 8px;
+        padding: 30px 25px 40px 25px;
+        border: 1px solid transparent;
+    }
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        margin: 0;
+    }
+
+    p{
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
+        margin: 0px 8px 0px 8px;
+    }
+
+    .flex-item-left-footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 23px;
+    }
+    
+    .footer-1{
+        width: 100%;
+        text-align: center;
+        height: 9vh;
+    }
+    h2{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        padding-left: 1px;
+        margin-bottom: 3px;
+    }
+    .p-1{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        border: none;
+        color: hsla(0, 0%, 100%, 0.6);
+    
+    }
+    .footer-2{
+        width: 100%;
+        text-align: center;
+        height: 9vh;
+    }
+    
+    .footer-3{
+        width: 100%;
+        text-align: center;
+        height: 9vh;
+    }
+
+}
+
+/* For Screen between width of 591 and 694px */
+@media only screen and (max-width: 694px) and (min-width: 591px){
+    .card{
+        max-width: 540px;
+        display: flex;
+        flex-direction: row;
+    }
+        
+    .flex-item-left{
+        width: 50%;
+        height: 45vh;
+        background-color: hsl(244, 38%, 16%);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 55px 0px 5px 45px ;
+        border: 1px solid transparent;
+    }
+        
+    .cont{
+        margin-right: 2px;
+    }
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.0rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin-right: 36px;
+    }
+        
+    span:nth-child(1){
+        color: hsl(277, 64%, 61%);
+    }
+        
+    p{
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 0.4375rem;
+        margin-right: 50px;
+        margin-bottom: 70px;
+        line-height: 1.0rem;
+    }
+        
+    .flex-item-left-footer{
+        display: flex;
+        flex-direction: row;
+    }
+        
+    .footer-1{
+        width: 30%;
+        height: 7vh;
+    }
+    
+    h2{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        padding-left: 1px;
+        margin-bottom: 3px;
+    }
+
+    .p-1{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 0.5rem;
+        border: none;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+
+    .footer-2{
+        width: 30%;
+        height: 7vh;
+    }
+        
+    .footer-3{
+        width: 25%;
+        height: 7vh;
+    }
+        
+    .flex-item-right{
+        width: 50%;
+        height: 45vh;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: 1px solid transparent;
+        background-image: url("images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 265px 325px;
+        background-color: hsla(277, 64%, 61%, 1);
+        background-blend-mode: multiply;
+    }    
+}
+
+/* For Screens between the width of 695 and 1015px */
+@media only screen and (max-width: 1015px) and 
+(min-width: 695px){
+    
+    .card{
+        max-width: 670px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-item-left{
+        width: 50%;
+        height: 49vh;
+        background-color: hsl(244, 38%, 16%);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 55px 0px 5px 45px ;
+        border: 1px solid transparent;
+    }
+    
+    .cont{
+        margin-right: 2px;
+    }
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin-right: 36px;
+    }
+    
+    span:nth-child(1){
+        color: hsl(277, 64%, 61%);
+    }
+    
+    p{
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 0.5rem;
+        margin-right: 50px;
+        margin-bottom: 70px;
+        line-height: 1.0rem;
+    }
+    
+    .flex-item-left-footer{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer-1{
+        width: 30%;
+        height: 7vh;
+    }
+    
+    h2{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        padding-left: 1px;
+        margin-bottom: 3px;
+    }
+
+    .p-1{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 9px;
+        border: none;
+        color: hsla(0, 0%, 100%, 0.6);
+    
+    }
+    .footer-2{
+        width: 30%;
+        height: 7vh;
+    }
+    
+    .footer-3{
+        width: 25%;
+        height: 7vh;
+    }
+    
+    .flex-item-right{
+        width: 50%;
+        height: 49vh;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: 1px solid transparent;
+        background-image: url("images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 295px 352px;
+        background-color: hsla(277, 64%, 61%, 1);
+        background-blend-mode: multiply;
+}
