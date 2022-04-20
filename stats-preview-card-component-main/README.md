@@ -8,7 +8,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-![Design preview for the Stats Preview Card Component coding challenge](./swift-stats-preview-card-component.png)
+![Design preview for the Stats Preview Card Component coding challenge](./swiftpreview-card-component.png)
 
 ### Links
 
